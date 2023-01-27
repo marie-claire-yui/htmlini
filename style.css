@@ -1,0 +1,95 @@
+*{  /*    l'étoile pour que le css s'applique à tout l'html */
+    /*initialisation du CSS pour se débarasser du CSS appliqué par le navigateur*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*taille de la box = taille de l'écran*/
+    font-family: 'Lobster', cursive;  
+}
+
+#my-header{
+    text-align: center;
+    background-image: url(IMG/jpbgintro.jpg);
+    background-size: cover;
+    padding: 150px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.feature{
+    padding:40px;
+    font-weight: 300;
+}
+
+/* sélecteur descendant, on sélectionne les images mais seulement des div de class feature */
+.feature img{
+    padding:20px;
+    border: 2px solid black;
+}
+
+
+/* s'applique à toutes les images */
+img{ 
+    border-radius:50px;
+    transition: 0.5s;
+}
+img:hover{
+    border-radius:0%;
+}
+
+/* on met un margin non nul pour pouvoir voir les listes puces et numéros */
+/* rq: , pour sélectionner plusieurs éléments */
+ul,ol{
+    margin: 50px;
+}
+
+h2{
+    color:red;
+    font-size: 40 px;
+    font-family: arial;
+}
+
+body{
+    color:blue;
+    background-image:url("IMG/icon3.png")
+}
+
+#monlogo{
+    width: 500px;
+    border: 5px solid red;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+.images_bas {   
+    /* display: inline-block; */
+    display: flex;
+    
+    justify-content: space-around;
+}
+.staff {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
+    
+}
+
+.shadow{
+    box-shadow: 5px 5px 3px rgb(140, 73, 73);
+}
+
+#my-footer{
+    padding:30px;
+    background:rgb(30,30,30);
+    color: yellow;
+}
+
+#my-footer a {
+    color: lightgray;
+    font-size: 25px;
+}
+/* pseudoclass, des règles qui s'appliquent à certains éléments dans un certain état */
+#my-footer a:hover {
+    color:white;
+}
+
